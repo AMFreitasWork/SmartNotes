@@ -59,7 +59,9 @@ ROOT_URLCONF = 'smartnotes.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+            BASE_DIR / 'static/templates'
+            ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -123,7 +125,7 @@ USE_TZ = True
 #STATIC_ROOT = 'SmartNotes/smartnotes/static'
 STATIC_URL = 'static/'
 
-STATICFILES_URL = [os.path.join(BASE_DIR, 'static')]
+STATICFILES_URL = [os.path.join(BASE_DIR, 'static/css')]
 #STATTICFILES_DIRS =[
 #       BASE_DIR / "static",
        
