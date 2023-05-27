@@ -8,4 +8,7 @@
     <p> {{note.text}}</p>
 </div>
 
+<a href="{% url 'notes.list' %}" class=" btn btn-primary"> Back </a>
+<a href="{% url 'notes.update' pk=note.id %}" class="btn btn-secondary"> Edit </a>
+
 {% endblock %}
