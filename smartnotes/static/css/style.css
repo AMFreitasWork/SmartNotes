@@ -1,4 +1,4 @@
 
 ul.errorlist{display:none}
-
+.input-group>input.someInput {flex: 0 1 1000px;}
 

@@ -7,9 +7,13 @@ from .models import Note
 from django.views.generic import CreateView, DetailView, ListView, UpdateView
 from django.views.generic.edit import DeleteView
 from django.contrib.auth.mixins import LoginRequiredMixin
+from django.contrib.auth.views import LoginView
 from .forms import NotesForm
 
 # Create your views here.
+
+
+
 
 class NotesDeleteView(DeleteView):
     model = Note
